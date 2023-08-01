@@ -7,7 +7,7 @@ import format from "pg-format";
 const insertQuery = async (req:Request, res: Response): Promise<Response> => {
     const payload: MoviesCreate = req.body; 
     const queryString: string = `
-    INSERT INTO "movies" ("name", "category", "duration", "price")
+    INSERT INTO movies ("name", "category", "duration", "price")
     VALUES ($1, $2, $3, $4)
     RETURNING *;
     `
@@ -73,7 +73,7 @@ const updateByIdQuery = async (req: Request, res: Response): Promise<Response> =
     const updateValues: string[] = Object.values(body);
 
     const queryTemplate: string =`
-    UPDATE "movies"
+    UPDATE movies
     SET (%I) = ROW(%L)
     WHERE id = $1
     RETURNING *;
