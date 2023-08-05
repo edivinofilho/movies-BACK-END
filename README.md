@@ -1,3 +1,31 @@
+# Movie Stream API
+
+## Description
+The Movie Stream API is designed for use in a streaming platform to manage the collection of available movies. It provides various routes to create, list, update, and delete movies.
+
+## Routes
+- POST /movies: Create a new movie and add it to the collection.
+- GET /movies: List all available movies.
+- GET /movies/:id Retrieve information about a specific movie based on its unique id.
+- PATCH /movies/:id Update the data of a movie using its id.
+- DELETE /movies/:id Delete a movie based on its id.
+
+## Technologies Used
+
+- TypeScript
+- SQL
+
+## Credits
+This project is part of the Full Stack Developer course at Kenzie Academy Brasil (www.kenzie.com.br). All rights and intellectual property of this project belong to Kenzie Academy Brasil.
+
+I would like to extend my gratitude to the instructors' team at Kenzie for their support and guidance throughout the development of this project.
+
+## Contact
+edivinofilho@hotmail.com
+
+
+## How to Build Guidelines (Como Construir)
+
 # Locadora de Filmes
 
 ## Introdução
